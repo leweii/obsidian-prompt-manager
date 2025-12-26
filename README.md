@@ -1,6 +1,6 @@
 # Obsidian Prompt Manager
 
-A Claude Code plugin for managing reusable prompts in your Obsidian vault.
+A Claude Code command for managing reusable prompts in your Obsidian vault.
 
 ## Features
 
@@ -13,21 +13,16 @@ All operations are handled natively by Claude Code - no external scripts require
 
 ## Installation
 
-**Step 1:** Add the marketplace
-```
-/plugin marketplace add leweii/obsidian-prompt-manager
-```
-
-**Step 2:** Install the plugin
-```
-/plugin install obsidian-prompt-manager@obsidian-plugins
-```
-
-**Alternative:** Manual install
 ```bash
-mkdir -p ~/.claude/skills
+mkdir -p ~/.claude/commands
+curl -o ~/.claude/commands/obsidian.md https://raw.githubusercontent.com/leweii/obsidian-prompt-manager/main/commands/obsidian.md
+```
+
+Or manually:
+```bash
+mkdir -p ~/.claude/commands
 git clone https://github.com/leweii/obsidian-prompt-manager.git /tmp/opm
-cp -r /tmp/opm/skills/obsidian ~/.claude/skills/
+cp /tmp/opm/commands/obsidian.md ~/.claude/commands/
 ```
 
 ## Quick Start
@@ -92,29 +87,13 @@ Review this code for:
 
 ## Configuration
 
-Configuration is stored in the skill's `config.json`:
+Configuration is stored at `~/.claude/obsidian-config.json`:
 
 ```json
 {
   "vaultPath": "/path/to/your/vault",
   "promptsFolder": "Claude-Prompts"
 }
-```
-
-## File Structure
-
-```
-obsidian-prompt-manager/
-├── .claude-plugin/
-│   ├── plugin.json
-│   └── marketplace.json
-├── skills/
-│   └── obsidian/
-│       ├── SKILL.md
-│       ├── config.json
-│       └── config.template.json
-├── LICENSE
-└── README.md
 ```
 
 ## License

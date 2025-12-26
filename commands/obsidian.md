@@ -8,7 +8,7 @@ You are managing prompts in the user's Obsidian vault.
 
 ## Configuration
 
-Config file location: `~/.claude/plugins/obsidian-prompt-manager/skills/obsidian/config.json`
+Config file location: `~/.claude/obsidian-config.json`
 
 If config doesn't exist or vaultPath is empty, ask user to provide their vault path first.
 
@@ -21,7 +21,7 @@ Parse the arguments to determine which action to take:
 ### If `setup <path>` or just a path:
 1. Validate path exists: `ls -la <path>`
 2. Create prompts folder: `mkdir -p <path>/Claude-Prompts`
-3. Save config using Write tool to `~/.claude/plugins/obsidian-prompt-manager/skills/obsidian/config.json`:
+3. Save config using Write tool to `~/.claude/obsidian-config.json`:
    ```json
    {
      "vaultPath": "<absolute-path>",
