@@ -1,0 +1,14 @@
+{
+  "name": "obsidian-plugins",
+  "owner": {
+    "name": "leweii"
+  },
+  "plugins": [
+    {
+      "name": "obsidian-prompt-manager",
+      "source": ".",
+      "description": "Manage reusable prompts in your Obsidian vault from Claude Code. Save, list, and execute prompts seamlessly.",
+      "version": "2.0.0"
+    }
+  ]
+}
