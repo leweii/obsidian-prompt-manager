@@ -13,8 +13,21 @@ All operations are handled natively by Claude Code - no external scripts require
 
 ## Installation
 
+**Step 1:** Add the marketplace
+```
+/plugin marketplace add leweii/obsidian-prompt-manager
+```
+
+**Step 2:** Install the plugin
+```
+/plugin install obsidian-prompt-manager@obsidian-plugins
+```
+
+**Alternative:** Manual install
 ```bash
-/plugin install leweii/obsidian-prompt-manager
+mkdir -p ~/.claude/skills
+git clone https://github.com/leweii/obsidian-prompt-manager.git /tmp/opm
+cp -r /tmp/opm/skills/obsidian ~/.claude/skills/
 ```
 
 ## Quick Start
@@ -93,7 +106,8 @@ Configuration is stored in the skill's `config.json`:
 ```
 obsidian-prompt-manager/
 ├── .claude-plugin/
-│   └── plugin.json
+│   ├── plugin.json
+│   └── marketplace.json
 ├── skills/
 │   └── obsidian/
 │       ├── SKILL.md
