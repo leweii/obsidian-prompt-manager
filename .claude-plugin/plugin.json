@@ -1,7 +1,7 @@
 {
   "name": "obsidian-prompt-manager",
   "description": "Manage reusable prompts in your Obsidian vault from Claude Code. Save, list, and execute prompts seamlessly.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "leweii",
   "repository": "https://github.com/leweii/obsidian-prompt-manager",
   "license": "MIT",
