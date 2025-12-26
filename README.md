@@ -12,7 +12,7 @@ A Claude Code plugin for managing reusable prompts in your Obsidian vault.
 ## Installation
 
 ```bash
-/plugin install JakobHe/obsidian-prompt-manager
+/plugin install leweii/obsidian-prompt-manager
 ```
 
 ## Setup
